@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>MHSCOURTAGE</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo1.jpeg" rel="icon">
+  <link href="assets/img/lol.jpeg" rel="logo">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+</head>
+
+<body class="index-page">
+
+
+  <!-- stylisation consentement cookies -->
+<style> 
+  #cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1000;
+  }
+  
+  .cookie-popup p {
+    margin: 0 0 15px 0;
+    font-size: 14px;
+  }
+  
+  .cookie-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .btn {
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .btn-danger {
+    background-color: #517eb5;
+    color: white;
+    border: none;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+  }
+  
+  .btn-success {
+    background-color: #2a63a4;
+    color: white;
+    border: none;
+  }
+
+</style>
+  
+
+  <!-- Consentement cookies  -->
+    
+  <div id="cookie-banner" style="display: flex;">
+    <div class="cookie-popup">
+      <p>
+        <strong>MHS COURTAGE</strong> et ses Partenaires utilisent des cookies pour collecter des statistiques, vous proposer de la publicité personnalisée et vous permettre de partager du contenu sur les réseaux sociaux.
+        Nous conservons votre choix pendant 24 mois. Vous pouvez changer d'avis à tout moment en cliquant sur le lien disponible dans la page 
+        <a href="/cookie.html">Gestion des cookies</a>.
+      </p>
+      <div class="cookie-buttons">
+        <button id="refuse-cookies" class="btn btn-danger">Refuser</button>
+        <button id="configure-cookies" class="btn btn-secondary">Configurer</button>
+        <button id="accept-cookies" class="btn btn-success">Accepter et fermer</button>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="assets/img/logo1.jpeg" alt="logo" style="border-radius: 10px;">
+        <h1 class="sitename">MHSCOURTAGE </h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Accueil</a></li>
+          <li><a href="quisommesNous.html">Qui sommes-nous</a></li>
+          <li><a href="NosProduits.html">Nos Produits</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="ObtenirDevis.html">Obtenir un Devis</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="hero-bg">
+        <img src="assets/img/hero-bg-light.webp" alt="">
+      </div>
+      <div class="container text-center">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <h1 data-aos="fade-up">BIENVENUE Chez <span>MHSCOURTAGE</span></h1>
+          <p data-aos="fade-up" data-aos-delay="100"><br> <marquee behavior="" direction="">Votre Partenaire de Confiance en Assurance</marquee></p>
+
+
+
+          <div class="container py-5">
+            <div class="row align-items-center">
+
+              <!-- Colonne de l'image -->
+              <div class="col-lg-6 mb-4 mb-lg-0">
+                <img src="assets/img/senior2.jpg" class="img-fluid hero-img" style="border-radius: 20px;width: 500px;" alt="" data-aos="zoom-out" data-aos-delay="200">
+              </div>
+
+              <!-- Colonne des icônes -->
+              <div class="col-lg-6">
+                <div class="text-start mb-3">
+                  <span class="badge bg-danger text-white"> Particulier et Professionel!</span>
+                </div>
+
+                <div class="row">
+                  <!-- Assurance Santé -->
+                  <div class="col-md-6">
+                    <div class="p-3 text-center border rounded shadow-sm">
+                      <a href="assurance/assuranceSante.html"><i class="bi bi-heart-pulse fs-1 text-success"></i>
+                        <h5 class="mt-2">Assurance Santé</h5></a>
+                    </div>
+                  </div>
+                
+                  <!-- Assurance Habitation -->
+                  <div class="col-md-6">
+                    <div class="p-3 text-center border rounded shadow-sm">
+                      <a href="assurance/assurancehabitat.html"><i class="bi bi-house-door fs-1 text-primary"></i>
+                        <h5 class="mt-2">Assurance Habitation</h5></a>
+                    </div>
+                  </div>
+                
+                  <!-- Assurance Auto/Moto -->
+                  <div class="col-md-6">
+                    <div class="p-3 text-center border rounded shadow-sm">
+                      <a href="assurance/assuranceAutomoto.html"><i class="bi bi-car-front fs-1 text-danger"></i>
+                        <h5 class="mt-2">Assurance Auto/Moto</h5></a>
+                    </div>
+                  </div>
+                
+                  <!-- Assurance VTC/Taxi -->
+                  <div class="col-md-6">
+                    <div class="p-3 text-center border rounded shadow-sm">
+                     <a href="assurance/assuranceVtc.html"> <i class="bi bi-taxi-front fs-1 text-warning"></i>
+                      <h5 class="mt-2">Assurance VTC/Taxi</h5></a>
+                    </div>
+                  </div>
+                
+                  <!-- Assurance Décennale -->
+                  <div class="col-md-6">
+                    <div class="p-3 text-center border rounded shadow-sm">
+                     <a href="assurance/assuranceDecennale.html"> <i class="bi bi-building fs-1 text-secondary"></i>
+                      <h5 class="mt-2">Assurance Décennale</h5></a>
+                    </div>
+                  </div>
+                
+                  <!-- Assurance RC Pro -->
+                  <div class="col-md-6">
+                    <div class="p-3 text-center border rounded shadow-sm">
+                      <a href="assurance/assuranceRcpro.html"><i class="bi bi-briefcase fs-1 text-info"></i>
+                        <h5 class="mt-2">Assurance RC Pro</h5></a>
+                    </div>
+                  </div>
+                </div>
+                
+
+                </div> <!-- Fin de la row gy-4 -->
+              </div> <!-- Fin de la col-lg-6 -->
+
+            </div> <!-- Fin de la row align-items-center -->
+          </div> <!-- Fin du container -->
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Featured Services Section -->
+    <section id="featured-services" class="featured-services section light-background">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-person-badge"></i></div>
+              <div>
+                <h4 class="title"><a href="contact.html" class="stretched-link">Proximité & Ecoute</a></h4>
+                <p class="description">Des conseillés disponibles pour vous accompagner au quotidien</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-credit-card"></i></div>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Tarifs Compétitifs</a></h4>
+                <p class="description">Des solutions d'assurance adaptées à votre budget,sans compromis sur les garanties</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-lightning-charge"></i></div>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Rapidité & Simplicité</a></h4>
+                <p class="description">Des démarches simplifiées et un traitement rapide des demandes</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Featured Services Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <p class="who-we-are">MHSCOURTAGE</p>
+            <h3>Votre Partenaire de Confiance en Solutions d’Assurance</h3>
+            <p class="fst-italic">
+            Nous libérons le potentiel de nos clients grâce à des stratégies d’assurance sur mesure et innovantes. Nous estimons fermement que toute personne mérite une couverture adaptée à ses besoins spécifiques selon son budget.
+
+        </p>
+        <p> Notre engagement est simple :</p>
+
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Offrir des solutions efficaces et transparentes</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Offrir des tarifs compétitifs et des garanties solides</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Nous mettons un point d’honneur à écouter, conseiller et accompagner nos clients à chaque étape, pour leur assurer tranquillité d’esprit et sécurité.</span></li>
+            </ul>
+            <a href="NosProduits.html" class="read-more"><span>En savoir plus</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
+            <div class="row gy-4">
+              <div class="col-lg-6">
+                <img src="assets/img/sign.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-6">
+                <div class="row gy-4">
+                  <div class="col-lg-12">
+                    <img src="assets/img/seniorheureux.jpg" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-lg-12">
+                    <img src="assets/img/habit.jpeg" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- /About Section -->
+
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Partenaires</h2>
+
+        <p>Ils nous font confiance </p>
+      </div><!-- End Section Title -->
+
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+
+            <style>
+                .client-logos {
+                  overflow: hidden;
+                  white-space: nowrap;
+                  position: relative;
+                  padding: 20px 0;
+                  background-color: #f8f9fa; /* Couleur de fond optionnelle */
+                }
+
+                .client-logos .logos-slide {
+                  display: inline-block;
+                  animation: scroll 30s linear infinite;
+                }
+
+                .client-logos img {
+                  width: 150px;
+                  height: auto;
+                  margin: 0 30px;
+                  display: inline-block;
+                }
+
+                @keyframes scroll {
+                  from {
+                    transform: translateX(0);
+                  }
+                  to {
+                    transform: translateX(-100%);
+                  }
+                }
+
+                /* Duplique les logos pour un défilement continu */
+                .client-logos .logos-slide:nth-child(2) {
+                  animation-delay: 0s;
+                }
+              </style>
+            </head>
+            <body>
+
+            <div class="client-logos">
+              <div class="logos-slide">
+                <img src="assets/img/clients/client-1.png" alt="Client 1">
+                <img src="assets/img/clients/client-2.png" alt="Client 2">
+                <img src="assets/img/clients/client-3.png" alt="Client 3">
+                <img src="assets/img/clients/client-4.png" alt="Client 4">
+                <img src="assets/img/clients/client-5.png" alt="Client 5">
+                <img src="assets/img/clients/client-6.png" alt="Client 6">
+                <img src="assets/img/clients/client-7.png" alt="Client 7">
+                <img src="assets/img/clients/client-8.png" alt="Client 8">
+                <img src="assets/img/clients/client-9.png" alt="Client 9">
+                <img src="assets/img/clients/client-10.png" alt="Client 10">
+                <img src="assets/img/clients/client-11.jpeg" alt="Client 11">
+                <img src="assets/img/clients/client-12.png" alt="Client 12">
+                <img src="assets/img/clients/client-13.png" alt="Client 13">
+                <img src="assets/img/clients/client-14.png" alt="Client 14">
+                <img src="assets/img/clients/client-15.png" alt="Client 15">
+                <img src="assets/img/clients/client-16.jpg" alt="Client 16">
+                <img src="assets/img/clients/client-17.png" alt="Client 17">
+
+              </div>
+
+              <!-- Duplique le même ensemble d'images pour une animation continue -->
+              <div class="logos-slide">
+                <img src="assets/img/clients/client-1.png" alt="Client 1">
+                <img src="assets/img/clients/client-2.png" alt="Client 2">
+                <img src="assets/img/clients/client-3.png" alt="Client 3">
+                <img src="assets/img/clients/client-4.png" alt="Client 4">
+                <img src="assets/img/clients/client-5.png" alt="Client 5">
+                <img src="assets/img/clients/client-6.png" alt="Client 6">
+                <img src="assets/img/clients/client-7.png" alt="Client 7">
+                <img src="assets/img/clients/client-8.png" alt="Client 8">
+                <img src="assets/img/clients/client-9.png" alt="Client 9">
+                <img src="assets/img/clients/client-10.png" alt="Client 10">
+                <img src="assets/img/clients/client-11.jpeg" alt="Client 11">
+                <img src="assets/img/clients/client-12.png" alt="Client 12">
+                <img src="assets/img/clients/client-13.png" alt="Client 13">
+                <img src="assets/img/clients/client-14.png" alt="Client 14">
+                <img src="assets/img/clients/client-15.png" alt="Client 15">
+                <img src="assets/img/clients/client-16.jpg" alt="Client 16">
+                <img src="assets/img/clients/client-17.png" alt="Client 17">
+              </div>
+            </div>
+
+
+
+
+
+    </section><!-- /Clients Section -->
+
+
+
+    <!-- Services Section -->
+    <section id="services" class="services section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Produits</h2>
+        <p>Découvrez Nos Solutions d’Assurance Complètes</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row g-5">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item item-cyan position-relative">
+                <i class="bi bi-car-front icon"></i>
+              <div>
+                <h3>Assurance Auto/Moto </h3>
+                <p>Une protection complète pour vous et votre véhicule. Que vous soyez en voiture ou à moto, nos offres d’assurance vous garantissent sécurité et sérénité sur la route.</p>
+                <a href="assurance/assuranceAutomoto.html" class="read-more stretched-link">En savoir plus <i class="bi bi-car-front"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item item-orange position-relative">
+                <i class="bi bi-house icon"></i>
+              <div>
+                <h3>Assurance Habitation </h3>
+                <p>Une couverture complète contre les sinistres et les dommages du quotidien. Votre logement mérite une protection solide et fiable, pour que vous restiez serein chez vous.</p>
+                <a href="assurance/assurancehabitat.html" class="read-more stretched-link">En savoir plus <i class="bi bi-house"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item item-teal position-relative">
+                <i class="bi bi-heart-pulse icon"></i>
+              <div>
+                <h3>Assurance Santé</h3>
+                <p>Des soins adaptés et une couverture optimale pour vous et votre famille. Avec notre assurance santé, bénéficiez d’une prise en charge complète et rapide face aux imprévus médicaux</p>
+                <a href="assurance/assuranceSante.html" class="read-more stretched-link">En savoir plus <i class="bi bi-hospital"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item item-blue position-relative">
+              <i class="bi bi-building icon"></i>
+              <div>
+                <h3>Assurance Décennale</h3>
+                <p>
+                  Protégez vos projets et vos responsabilités en toute sérénité. Notre assurance décennale garantit la couverture des dommages liés à vos travaux pendant 10 ans, assurant ainsi la satisfaction de vos clients et la pérennité de vos activités.
+                </p>
+                <a href="assurance/assuranceDecennale.html" class="read-more stretched-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item item-indigo position-relative">
+              <i class="bi bi-briefcase icon"></i>
+              <div>
+                <h3>Assurance RC Pro</h3>
+                <p>
+                  Protégez votre activité et vos clients grâce à notre assurance RC Pro. Elle couvre les dommages causés à des tiers dans le cadre de votre activité professionnelle, vous garantissant une sérénité totale.
+                </p>
+                <a href="assurance/assuranceRcpro.html" class="read-more stretched-link">En savoir plus <i class="bi bi-briefcase"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+  <div class="service-item item-blue position-relative">
+    <i class="bi bi-car-front icon"></i>
+    <div>
+      <h3>Assurance VTC/Taxi</h3>
+      <p>Roulez en toute sérénité avec notre assurance dédiée aux chauffeurs VTC et Taxi. Elle couvre les risques liés à votre activité professionnelle : responsabilité civile, protection contre les dommages, et bien plus encore. Une solution adaptée pour vous protéger et sécuriser vos passagers.</p>
+      <a href="assurance/assuranceVtc.html" class="read-more stretched-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
+    </div>
+  </div>
+</div>
+
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+
+      <!-- Features Section -->
+    <section id="features" class="features section">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-lg-5 d-flex align-items-center">
+              <ul class="nav nav-tabs" data-aos="fade-up" data-aos-delay="100">
+                <li class="nav-item">
+                  <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
+                    <ul class="nav nav-tabs row g-2 d-flex">
+                      <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-1">
+                          <i class="bi bi-shield-plus"></i>
+                          <div>
+                            <h4 class="d-none d-lg-block">Protection Financière pour Vos Proches</h4>
+                            <p>
+                              L'assurance prévoyance garantit un soutien financier à vos proches en cas d'incapacité, d'invalidité ou de décès. Elle vous aide à préserver leur avenir en toute sérénité.
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
+                          <i class="bi bi-person-heart"></i>
+                          <div>
+                            <h4 class="d-none d-lg-block">Accompagnement en Cas d'Imprévu</h4>
+                            <p>
+                              Que ce soit pour couvrir une perte de revenus due à une maladie ou un accident, l'assurance prévoyance vous offre une sécurité pour faire face aux imprévus de la vie.
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
+                          <i class="bi bi-house-heart"></i>
+                          <div>
+                            <h4 class="d-none d-lg-block">Tranquillité pour Vous et Votre Famille</h4>
+                            <p>
+                              Avec une couverture adaptée à vos besoins, vous bénéficiez d'une protection complète, garantissant le maintien du niveau de vie de vos proches et le paiement des charges essentielles.
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                    
+            </div>
+
+            <div class="col-lg-6">
+
+              <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="tab-pane fade active show" id="features-tab-1">
+                  <img src="assets/img/tabs-1.jpeg" alt="" class="img-fluid">
+                </div><!-- End Tab Content Item -->
+
+                <div class="tab-pane fade" id="features-tab-2">
+                  <img src="assets/img/tabs-2.jpg" alt="" class="img-fluid">
+                </div><!-- End Tab Content Item -->
+
+                <div class="tab-pane fade" id="features-tab-3">
+                  <img src="assets/img/tabs-3.jpg" alt="" class="img-fluid">
+                </div><!-- End Tab Content Item -->
+
+
+                <div class="tab-pane fade" id="features-tab-4">
+                    <img src="assets/img/auto.png" alt="" class="img-fluid">
+                  </div><!-- End Tab Content Item -->
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section><!-- /Features Section -->
+
+      <!-- Features Details Section -->
+      <section id="features-details" class="features-details section">
+
+        <div class="container">
+
+          <div class="row gy-4 justify-content-between features-item">
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <img src="assets/img/sante.png" class="img-fluid" alt="">
+            </div>
+
+            <div class="col-lg-5 d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
+              <div class="content">
+                <h3>Protégez votre santé et celle de vos proches</h3>
+                <p>
+                  Offrez-vous une couverture santé complète et adaptée à vos besoins. Que ce soit pour les consultations médicales, les hospitalisations ou les soins spécialisés, nous vous accompagnons à chaque étape pour garantir votre sérénité. Faites confiance à une assurance santé qui place votre bien-être au cœur de ses priorités.
+                </p>
+              </div>
+              
+                <a href="assurance/assuranceSante.html" class="btn more-btn">En savoir plus</a>
+              </div>
+            </div>
+
+          </div><!-- Features Item -->
+
+          <div class="row gy-4 justify-content-between features-item">
+
+            <div class="col-lg-5 d-flex align-items-center order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+
+              <div class="content">
+                <h3>Protégez votre foyer en toute sérénité</h3>
+                <p>
+                  L'assurance habitation est essentielle pour protéger votre maison ou appartement contre les imprévus tels que les incendies, les dégâts des eaux, les cambriolages, et bien plus encore. Que vous soyez propriétaire, locataire ou copropriétaire, nous avons des solutions adaptées à vos besoins.
+                </p>
+                <ul>
+                  <li><i class="bi bi-easel flex-shrink-0"></i> Couverture complète pour vos biens mobiliers et immobiliers.</li>
+                  <li><i class="bi bi-patch-check flex-shrink-0"></i> Protection contre les sinistres courants et les responsabilités civiles.</li>
+                  <li><i class="bi bi-brightness-high flex-shrink-0"></i> Assistance 24/7 pour vous accompagner en cas d'urgence.</li>
+                </ul>
+                <p>
+                  Avec nos garanties flexibles et nos services dédiés, vivez l'esprit tranquille en sachant que votre foyer est entre de bonnes mains.
+                </p>
+                <a href="assurance/assurancehabitat.html" class="btn more-btn">En savoir plus</a>
+              </div>
+              
+
+            </div>
+
+            <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/img/features-2.jpeg" class="img-fluid" alt="">
+            </div>
+
+          </div><!-- Features Item -->
+
+        </div>
+
+      </section><!-- /Features Details Section -->
+
+
+
+
+    </section><!-- /Services Section -->
+
+     <!-- More Features Section -->
+    <section id="more-features" class="more-features section">
+
+      <div class="container">
+
+        <div class="row justify-content-around gy-4">
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+            <h3>Des solutions d'assurance adaptées aux professionnels</h3>
+<p>
+  Que vous soyez chauffeur VTC, artisan ou dirigeant d'entreprise, nous vous proposons des solutions d'assurance sur-mesure pour vous protéger, vous et votre activité. Notre expertise nous permet de répondre à vos besoins spécifiques avec des garanties adaptées.
+</p>
+
+<div class="row">
+
+  <div class="col-lg-6 icon-box d-flex">
+    <i class="bi bi-car-front flex-shrink-0"></i>
+    <div>
+      <h4>Assurance VTC/Taxi</h4>
+      <p>
+        Protégez votre véhicule et votre activité avec notre assurance dédiée aux chauffeurs VTC et taxis. Une couverture complète pour rouler en toute sérénité.
+      </p>
+    </div>
+  </div><!-- End Icon Box -->
+
+  <div class="col-lg-6 icon-box d-flex">
+    <i class="bi bi-shield-check flex-shrink-0"></i>
+    <div>
+      <h4>Assurance Responsabilité Civile Professionnelle</h4>
+      <p>
+        La RC Pro est essentielle pour couvrir les dommages causés à vos clients ou tiers dans le cadre de votre activité. Travaillez l'esprit tranquille grâce à une protection fiable.
+      </p>
+    </div>
+  </div><!-- End Icon Box -->
+
+  <div class="col-lg-6 icon-box d-flex">
+    <i class="bi bi-house flex-shrink-0"></i>
+    <div>
+      <h4>Assurance Décennale</h4>
+      <p>
+        Pour les professionnels du bâtiment, notre assurance décennale vous garantit une protection pendant 10 ans après la livraison de vos travaux. Sécurisez votre activité et votre réputation.
+      </p>
+    </div>
+  </div><!-- End Icon Box -->
+
+  <div class="col-lg-6 icon-box d-flex">
+    <i class="bi bi-briefcase flex-shrink-0"></i>
+    <div>
+      <h4>Une offre personnalisée</h4>
+      <p>
+        Nos conseillers sont à votre écoute pour vous proposer des solutions personnalisées en fonction de votre secteur d'activité et de vos besoins spécifiques.
+      </p>
+    </div>
+  </div><!-- End Icon Box -->
+
+</div>
+
+<div class="row mt-5">
+  <!-- Assurance VTC/Taxi -->
+  <div class="col-lg-4 mb-4">
+    <div class="card h-100 shadow-sm border-0">
+      <div class="card-img-overlay text-center d-flex flex-column justify-content-center p-0">
+       
+      </div>
+      <img src="assets/img/Capture d'écran 2025-01-10 133549.png" class="card-img img-hover-effect" alt="Assurance VTC/Taxi">
+    </div>
+  </div>
+
+  <!-- Assurance Décennale -->
+  <div class="col-lg-4 mb-4">
+    <div class="card h-100 shadow-sm border-0">
+      <div class="card-img-overlay text-center d-flex flex-column justify-content-center p-0">
+        <div class="overlay-content p-3">
+          
+        </div>
+      </div>
+      <img src="assets/img/Capture d'écran 2025-01-10 134547.png" class="card-img img-hover-effect" alt="Assurance Décennale">
+    </div>
+  </div>
+
+  <!-- Assurance RC Pro -->
+  <div class="col-lg-4 mb-4">
+    <div class="card h-100 shadow-sm border-0">
+      <div class="card-img-overlay text-center d-flex flex-column justify-content-center p-0">
+        
+      </div>
+      <img src="assets/img/Capture d'écran 2025-01-10 133100.png" class="card-img img-hover-effect" alt="Assurance RC Pro">
+    </div>
+  </div>
+</div>
+
+
+
+    </section><!-- /More Features Section --> 
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Avis des clients</h2>
+        <p>Collecte d'avis clients après expérience utilisateur</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Une équipe professionnelle et toujours à l'écoute. Mes besoins en assurance santé ont été pris en charge rapidement et efficacement. Merci !
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <h3>Jean Dupont</h3>
+                  <h4>Particulier</h4>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Leur offre d'assurance décennale est complète et parfaitement adaptée à mes activités professionnelles. Un vrai gage de tranquillité !
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <h3>Claire Martin</h3>
+                  <h4>Architecte</h4>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Très satisfait de mon assurance habitation. L'accompagnement est personnalisé et les tarifs compétitifs. Je recommande à 100% !
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                  <h3>Lucie Bernard</h3>
+                  <h4>Particulier</h4>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Une excellente couverture pour mes véhicules professionnels. L'équipe est réactive et toujours disponible pour répondre à mes questions.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                  <h3>Paul Lefevre</h3>
+                  <h4>Entrepreneur</h4>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  J'ai souscrit une assurance RC Pro pour mon activité de freelance, et je suis ravi de la simplicité et de la transparence du processus.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                  <h3>Marie Dubois</h3>
+                  <h4>Freelance</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Service rapide et efficace. Mon assurance auto a été activée en un rien de temps, et tout était parfaitement clair.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-6.jpg" class="testimonial-img" alt="">
+                  <h3>Alain Roche</h3>
+                  <h4>Particulier</h4>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Grâce à leur assurance VTC, je peux travailler en toute sérénité. Très satisfait de leur accompagnement professionnel.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-7.jpg" class="testimonial-img" alt="">
+                  <h3>Karim Bensaid</h3>
+                  <h4>Chauffeur VTC</h4>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Une couverture santé complète pour toute ma famille. Le service client est exceptionnel, toujours disponible pour nous aider.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-8.jpg" class="testimonial-img" alt="">
+                  <h3>Camille Durand</h3>
+                  <h4>Particulier</h4>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Je suis artisan et leur assurance décennale m'apporte une tranquillité d'esprit totale. Je recommande vivement.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-9.jpg" class="testimonial-img" alt="">
+                  <h3>Éric Morel</h3>
+                  <h4>Artisan</h4>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Très satisfait de leur offre d'assurance habitation. Un service simple et efficace, parfait pour mes besoins.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-10.jpg" class="testimonial-img" alt="">
+                  <h3>Sophie Leclerc</h3>
+                  <h4>Particulier</h4>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Assurance RC Pro au top ! Un excellent rapport qualité-prix et une prise en charge rapide en cas de besoin.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-11.jpg" class="testimonial-img" alt="">
+                  <h3>Michel Perrin</h3>
+                  <h4>Consultant</h4>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Le service client est d'une grande qualité. Ils m'ont parfaitement guidé pour trouver l'assurance auto adaptée à mes besoins.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-12.jpg" class="testimonial-img" alt="">
+                  <h3>Hélène Garnier</h3>
+                  <h4>Particulier</h4>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Une excellente expérience. Leur assurance VTC est complète et facile à gérer au quotidien. Merci pour votre soutien !
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-13.jpg" class="testimonial-img" alt="">
+                  <h3>Mehdi Zouaoui</h3>
+                  <h4>Chauffeur VTC</h4>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Une mutuelle santé qui répond parfaitement à mes attentes. Les remboursements sont rapides et sans soucis.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-14.jpg" class="testimonial-img" alt="">
+                  <h3>Anne Lemoine</h3>
+                  <h4>Particulier</h4>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Assurance décennale impeccable pour mon entreprise. Les garanties sont solides et adaptées à mes projets.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-15.png" class="testimonial-img" alt="">
+                  <h3>Thomas Leroy</h3>
+                  <h4>Constructeur</h4>
+                </div>
+              </div>
+            </div>
+            
+            
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Veuillez nous contactez pour tout besoin un Conseiller vous repond à l'immediat</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt"></i>
+              <h3>Adresse</h3>
+              <p>6 Av. des Champs-Élysées, Paris, 75000</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone"></i>
+              <h3>Appelez-nous</h3>
+              <p>+33 1 84 80 85 20</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope"></i>
+              <h3>Envoyez-nous un Courriel</h3>
+              <p><a href="emailto:gestion@mhscourtage.com">gestion@mhscourtage.com</a></p>
+            </div>
+          </div><!-- End Info Item -->
+
+        </div>
+
+        <div class="row gy-4 mt-1">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.96777914603!2d2.2646344809035113!3d48.858825492060404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sfr!2sma!4v1734516626828!5m2!1sfr!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" style="border:0; width: 100%; height: 400px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div><!-- End Google Maps -->
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="400">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Votre Nom" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Notre Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Sujet" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Votre Message a été envoyé Merci!</div>
+
+                  <button type="submit">Envoyez</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+          <img src="assets/img/logo1.jpeg" alt="logo" style="border-radius: 10px;">
+            <span class="sitename">MHSCOURTAGE</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>6 Av. des Champs-Élysées</p>
+            <p>Paris, France</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+33 1 84 80 85 20</span></p>
+            <p><strong>Email:</strong> <a href="mailto:gestion@mhscourtage.com">gestion@mhscourtage.com</a></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href="https://x.com/mhscourtage"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://web.facebook.com/profile.php?id=61570554551051"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/mhscourtage1/"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/mhscourtage1/"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Liens</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="quisommesNous.html">Qui sommes-nous</a></li>
+            <li><a href="NosProduits.html">Nos produits</a></li>
+            <li><a href="mentionlegale.html">Mention legales</a></li>
+            <li><a href="policy.html">Politique de confidentialité</a></li>
+            <li><a href="cookie.html">Cookies</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Nos produits</h4>
+          <ul>
+            <li><a href="assurance/assuranceSante.html">Assurance Santé</a></li>
+            <li><a href="assurance/assuranceAutomoto.html">Assurance Auto/Moto</a></li>
+            <li><a href="assurance/assurancehabitat.html">Assurance Habitation</a></li>
+            <li><a href="assurance/assuranceVtc.html">VTC</a></li>
+            <li><a href="assurance/assuranceDecennale.html">DECENNALE</a></li>
+            <li><a href="assurance/assuranceRcpro.html">RC PRO</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>Abonnez-vous à notre newsletter et recevez les dernières nouvelles sur nos produits et services!</p>
+          <form action="/forms/subscribe_newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email" placeholder="Votre email" required><input type="submit" value="S'abonner"></div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Votre demande d/’abonnement a bien été envoyée. Merci !</div>
+          </form>
+
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>©<span>2024</span>  <strong class="px-1 sitename">MHSCOURTAGE </strong><span>Tous droits reservés</span></p>
+      <div class="credits">
+
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- script consentement cookies  -->
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const cookieBanner = document.getElementById("cookie-banner");
+      const acceptBtn = document.getElementById("accept-cookies");
+      const refuseBtn = document.getElementById("refuse-cookies");
+  
+      // Vérifier si le consentement est déjà donné
+      // if (localStorage.getItem("cookies-consent")) {
+      //   cookieBanner.style.display = "none";
+      // }
+  
+      // Accepter les cookies
+      acceptBtn.addEventListener("click", function () {
+        localStorage.setItem("cookies-consent", "accepted");
+        cookieBanner.style.display = "none";
+      });
+  
+      // Refuser les cookies
+      refuseBtn.addEventListener("click", function () {
+        localStorage.setItem("cookies-consent", "refused");
+        cookieBanner.style.display = "none";
+      });
+  
+      // Si besoin, ajouter un comportement pour "Configurer"
+      const configureBtn = document.getElementById("configure-cookies");
+      configureBtn.addEventListener("click", function () {
+        alert("Redirigez l'utilisateur vers une page de configuration des cookies.");
+      });
+    });
+  </script>
+  
+
+</body>
+
+</html>
