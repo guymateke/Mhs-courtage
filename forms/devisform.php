@@ -1,9 +1,9 @@
 <?php
 // Configuration de la base de données
-$host = 'localhost'; // ou l'adresse de votre serveur
-$dbname = 'assurance';
-$username = 'root'; // votre utilisateur MySQL
-$password = ''; // votre mot de passe MySQL
+$host = '149.102.154.90'; // ou l'adresse de votre serveur
+$dbname = 'mhsc_assurance';
+$username = 'mhsc_a_essaid'; // votre utilisateur MySQL
+$password = 'e2f*qp@9%OE1wncJ'; // votre mot de passe MySQL
 
 try {
     // Connexion à la base de données
@@ -42,8 +42,32 @@ try {
             ':date_rdv' => $date_rdv,
         ]);
 
-        // Message de confirmation
-        echo "Votre demande de devis a été soumise avec succès.";
+        // Préparation des informations pour l'envoi d'un e-mail
+        $to = "gestion@mhscourtage.com"; // Remplacez par votre adresse e-mail
+        $subject = "Nouvelle demande de devis";
+        $message = "Vous avez reçu une nouvelle demande de devis.\n\n";
+        $message .= "Détails :\n";
+        $message .= "Prénom : $prenom\n";
+        $message .= "Nom : $nom\n";
+        $message .= "Email : $email\n";
+        $message .= "Téléphone : $telephone\n";
+        $message .= "Type d'assurance : $type_assurance\n";
+        $message .= "Détails supplémentaires : $details\n";
+        if ($date_rdv) {
+            $message .= "Date préférée pour le RDV : $date_rdv\n";
+        }
+
+        $headers = "From: $email\r\n";
+        $headers .= "Reply-To: $email\r\n";
+
+        // Envoi de l'e-mail
+        if (mail($to, $subject, $message, $headers)) {
+            echo "Votre demande de devis a été soumise avec succès.";
+            header("Refresh: 3; url=/index.html");
+        } else {
+            echo "Votre demande de devis a été soumise, mais l'envoi de l'e-mail a échoué.";
+            header("Refresh: 3; url=/index.html");
+        }
     }
 } catch (PDOException $e) {
     die("Erreur : " . $e->getMessage());
