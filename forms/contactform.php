@@ -1,58 +1,58 @@
 <?php
 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-require __DIR__ . '/../vendor/autoload.php';
+
+// echo "<pre>";
+// print_r($_POST);
+// echo "</pre>";
+// exit(); // Stoppe le script pour voir ce qui est reçu
+
+
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $nomComplet = htmlspecialchars($_POST['nomcomplet'] ?? '');
-    $email = filter_var($_POST['email'] ?? '', FILTER_SANITIZE_EMAIL);
-    $telephone = htmlspecialchars($_POST['telephone'] ?? '');
-    $objet = htmlspecialchars($_POST['objet'] ?? '');
-    $message = htmlspecialchars($_POST['message'] ?? '');
+    // Vérifier si les champs existent avant d'y accéder
+    $nomcomplet = isset($_POST['nomcomplet']) ? filter_var($_POST['nomcomplet'], FILTER_SANITIZE_FULL_SPECIAL_CHARS) : "";
+    $email = isset($_POST['email']) ? $_POST['email'] : "";
+    $telephone = isset($_POST['telephone']) ? filter_var($_POST['telephone'], FILTER_SANITIZE_FULL_SPECIAL_CHARS) : "";
+    $objet = isset($_POST['objet']) ? filter_var($_POST['objet'], FILTER_SANITIZE_FULL_SPECIAL_CHARS) : "";
+    $message_content = isset($_POST['message']) ? filter_var($_POST['message'], FILTER_SANITIZE_FULL_SPECIAL_CHARS) : "";
 
-    if (!empty($nomComplet) && !empty($email) && !empty($telephone) && !empty($objet) && !empty($message)) {
-        if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            $mail = new PHPMailer(true);
-            try {
-                // Configuration SMTP
-                $mail->isSMTP();
-                $mail->Host = 'smtp.gmail.com';
-                $mail->SMTPAuth = true;
-                $mail->Username = 'gestion@mhscourtage.com'; // Votre email Gmail
-                $mail->Password = ''; // Votre mot de passe
-                $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-                $mail->Port = 587;
+    // Debug : Voir les valeurs reçues
+    // echo "<pre>";
+    // print_r($_POST);
+    // echo "</pre>";
 
-                // Expéditeur et destinataire
-                $mail->setFrom($email, $nomComplet);
-                $mail->addAddress('admin@votre-site.com');
+    // Vérification de l'email
+    if (!empty($email) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        // Nettoyage de l'email après validation
+        $email = filter_var($email, FILTER_SANITIZE_EMAIL);
 
-                // Contenu
-                $mail->isHTML(false);
-                $mail->Subject = "Nouveau message de contact : $objet";
-                $mail->Body = "
-                    Nom complet : $nomComplet
-                    Email : $email
-                    Téléphone : $telephone
-                    Objet : $objet
-                    Message : $message
-                ";
+        // Informations de l'email
+        $to = "fichemhscourtage@mhscourtage.com";
+        $subject_email = "Nouveau message de contact : " . $objet;
 
-                $mail->send();
-                echo "Votre message a été envoyé avec succès.";
-                header("Refresh: 3; url=/index.html");
+        $message = "Un nouvel utilisateur a envoyé un message de contact :\n\n";
+        $message .= "Nom complet : " . $nomcomplet . "\n";
+        $message .= "Email : " . $email . "\n";
+        $message .= "Téléphone : " . $telephone . "\n";
+        $message .= "Objet : " . $objet . "\n";
+        $message .= "Message : " . $message_content . "\n";
 
-            } catch (Exception $e) {
-                echo "Erreur : {$mail->ErrorInfo}";
-            }
+        // En-têtes de l'email
+        $headers = "From: no-reply@mhscourtage.com\r\n";
+        $headers .= "Reply-To: " . $email . "\r\n";
+        $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+
+        // Envoi de l'email
+        if (mail($to, $subject_email, $message, $headers)) {
+            echo "Votre message a bien été envoyé.";
+
+            header("Refresh: 3; url=/index.html");
+            exit();
         } else {
-            echo "Adresse e-mail invalide.";
+            echo "Erreur : Le message n'a pas pu être envoyé.";
         }
     } else {
-        echo "Tous les champs sont obligatoires.";
+        echo "Erreur : Adresse email invalide.";
     }
 }
-
-
 ?>

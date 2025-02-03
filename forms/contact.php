@@ -1,53 +1,37 @@
 <?php
-  
- 
-// Vérifier si le formulaire est soumis via POST
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Récupérer les données soumises
-    $name = htmlspecialchars(trim($_POST['name']));
-    $email = htmlspecialchars(trim($_POST['email']));
-    $subject = htmlspecialchars(trim($_POST['subject']));
-    $message = htmlspecialchars(trim($_POST['message']));
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Récupération et nettoyage des données
+    $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+    $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+    $subject = filter_var($_POST['subject'], FILTER_SANITIZE_STRING);
+    $message_content = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
 
-    // Valider les champs obligatoires
-    if (empty($name) || empty($email) || empty($subject) || empty($message)) {
-        echo json_encode(["status" => "error", "message" => "Veuillez remplir tous les champs."]);
-        exit;
-    }
+    // Validation de l'email
+    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        // Informations de l'email
+        $to = "fichemhscourtage@mhscourtage.com"; // Remplacez par l'email du destinataire
+        $subject_email = "Nouveau message de contact : " . $subject;
+        
+        $message = "Un nouvel utilisateur a envoyé un message de contact :\n\n";
+        $message .= "Nom : " . $name . "\n";
+        $message .= "Email : " . $email . "\n";
+        $message .= "Sujet : " . $subject . "\n";
+        $message .= "Message : " . $message_content . "\n";
 
-    // Vérifier que l'e-mail est valide
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo json_encode(["status" => "error", "message" => "Adresse e-mail invalide."]);
-        exit;
-    }
+        // En-têtes de l'email
+        $headers = "From: no-reply@mhscourtage.com\r\n";
+        $headers .= "Reply-To: " . $email . "\r\n";
+        $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
-    // Configuration de l'e-mail
-    $to = "gestion@mhscourtage.com"; // Remplacez par votre adresse e-mail
-    $email_subject = "Nouveau message : " . $subject;
-    $email_body = "Nom : $name\n";
-    $email_body .= "Email : $email\n\n";
-    $email_body .= "Message :\n$message\n";
-
-    $headers = "From: $email\r\n";
-    $headers .= "Reply-To: $email\r\n";
-
-    // Envoyer l'e-mail
-    if (mail($to, $email_subject, $email_body, $headers)) {
-        echo json_encode(["status" => "success", "message" => "Votre message a été envoyé avec succès!"]);
-        header("Refresh: 3; url=/index.html");
-
+        // Envoi de l'email
+        if (mail($to, $subject_email, $message, $headers)) {
+            echo "Votre message a bien été envoyé.";
+            exit(); // Arrête l'exécution pour éviter tout comportement inattendu
+        } else {
+            echo "Erreur : Le message n'a pas pu être envoyé.";
+        }
     } else {
-        echo json_encode(["status" => "error", "message" => "Erreur lors de l'envoi du message. Réessayez."]);
-        header("Refresh: 3; url=/contact.html");
-
+        echo "Erreur : Adresse email invalide.";
     }
-} else {
-    echo json_encode(["status" => "error", "message" => "Méthode de requête invalide."]);
-    header("Refresh: 3; url=/ObtenirDevis.html");
-
 }
-
-
-
-
 ?>

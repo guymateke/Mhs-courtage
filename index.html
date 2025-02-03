@@ -20,7 +20,7 @@
   
   <meta property="og:title" content="MHSCOURTAGE | Solutions d'assurance adaptées à vos besoins">
   <meta property="og:description" content="Découvrez nos offres d'assurance pour la santé, l'habitation, les véhicules, les professionnels VTC/Taxi et plus encore.">
-  <meta property="og:image" content="assets/img/lol.webp">
+  <meta property="og:image" content="assets/img/lol.jpeg">
   <meta property="og:url" content="https://mhscourtage.com">
   <meta property="og:type" content="website">
 
@@ -29,8 +29,8 @@
   <meta name="twitter:description" content="Découvrez nos solutions d'assurance adaptées à vos besoins : santé, habitation, auto/moto, VTC/Taxi, décennale et RC Pro.">
   <meta name="twitter:image" content="assets/img/logo1.webp">
   
-  <link href="assets/img/logo1.webp" rel="icon">
-  <link href="assets/img/logo1.webp" rel="apple-touch-icon">
+  <link href="assets/img/logo1.jpeg" rel="icon">
+  <link href="assets/img/logo1.jpeg" rel="apple-touch-icon">
 
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
@@ -46,6 +46,8 @@
 
 
   <link rel="canonical" href="https://mhscourtage.com">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 
@@ -99,6 +101,14 @@
     border: none;
   }
 
+
+  a:hover .hover-icon {
+  transform: scale(1.2); /* Agrandit légèrement l'icône */
+  color: #050b26 !important; /* Change la couleur de l'icône au survol */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
 </style>
   
 
@@ -126,7 +136,7 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <img src="assets/img/logo1.webp" alt="logo" style="border-radius: 10px;">
+        <img src="assets/img/logo1.jpeg" alt="logo" style="border-radius: 10px;">
         <h1 class="sitename">MHSCOURTAGE </h1>
       </a>
 
@@ -148,6 +158,9 @@
   <main class="main">
 
     <!-- Hero Section -->
+
+
+    
     <section id="hero" class="hero section">
       <div class="hero-bg">
         <img src="assets/img/hero-bg-light.webp" alt="">
@@ -173,68 +186,77 @@
 
               <!-- Colonne de l'image -->
               <div class="col-lg-6 mb-4 mb-lg-0">
-                <img src="assets/img/senior2.webp" class="img-fluid hero-img" style="border-radius: 20px;width: 500px;" alt="assuré satisfait" data-aos="zoom-out" data-aos-delay="200">
+                <img src="assets/img/senior2.jpg" class="img-fluid hero-img" style="border-radius: 20px;width: 500px;" alt="assuré satisfait" data-aos="zoom-out" data-aos-delay="200">
               </div>
 
-              <!-- Colonne des icônes -->
               <div class="col-lg-6">
                 <div class="text-start mb-3">
-                  <span class="badge bg-danger text-white"> Particulier et Professionel!</span>
+                  <span class="badge bg-danger text-white">Particulier et Professionnel !</span>
                 </div>
-
-                <div class="row">
+              
+                <div class="row gy-4">
                   <!-- Assurance Santé -->
                   <div class="col-md-6">
                     <div class="p-3 text-center border rounded shadow-sm">
-                      <a href="assurance/assuranceSante.html"><i class="bi bi-heart-pulse fs-1 text-success"></i>
-                        <h5 class="mt-2">Assurance Santé</h5></a>
+                      <a href="assurance/assuranceSante.html" class="d-block text-decoration-none">
+                        <i class="bi bi-heart-pulse fs-1 text-success hover-icon"></i>
+                        <h5 class="mt-2 fw-bold text-dark">Assurance Santé</h5>
+                      </a>
                     </div>
                   </div>
-                
+              
                   <!-- Assurance Habitation -->
                   <div class="col-md-6">
                     <div class="p-3 text-center border rounded shadow-sm">
-                      <a href="assurance/assurancehabitat.html"><i class="bi bi-house-door fs-1 text-primary"></i>
-                        <h5 class="mt-2">Assurance Habitation</h5></a>
+                      <a href="assurance/assurancehabitat.html" class="d-block text-decoration-none">
+                        <i class="bi bi-house-door fs-1 text-primary hover-icon"></i>
+                        <h5 class="mt-2 fw-bold text-dark">Assurance Habitation</h5>
+                      </a>
                     </div>
                   </div>
-                
+              
                   <!-- Assurance Auto/Moto -->
                   <div class="col-md-6">
                     <div class="p-3 text-center border rounded shadow-sm">
-                      <a href="assurance/assuranceAutomoto.html"><i class="bi bi-car-front fs-1 text-danger"></i>
-                        <h5 class="mt-2">Assurance Auto/Moto</h5></a>
+                      <a href="assurance/assuranceAutomoto.html" class="d-block text-decoration-none">
+                        <i class="bi bi-car-front fs-1 text-danger hover-icon"></i>
+                        <h5 class="mt-2 fw-bold text-dark">Assurance Auto/Moto</h5>
+                      </a>
                     </div>
                   </div>
-                
+              
                   <!-- Assurance VTC/Taxi -->
                   <div class="col-md-6">
                     <div class="p-3 text-center border rounded shadow-sm">
-                     <a href="assurance/assuranceVtc.html"> <i class="bi bi-taxi-front fs-1 text-warning"></i>
-                      <h5 class="mt-2">Assurance VTC/Taxi</h5></a>
+                      <a href="assurance/assuranceVtc.html" class="d-block text-decoration-none">
+                        <i class="bi bi-taxi-front fs-1 text-warning hover-icon"></i>
+                        <h5 class="mt-2 fw-bold text-dark">Assurance VTC/Taxi</h5>
+                      </a>
                     </div>
                   </div>
-                
+              
                   <!-- Assurance Décennale -->
                   <div class="col-md-6">
                     <div class="p-3 text-center border rounded shadow-sm">
-                     <a href="assurance/assuranceDecennale.html"> <i class="bi bi-building fs-1 text-secondary"></i>
-                      <h5 class="mt-2">Assurance Décennale</h5></a>
+                      <a href="assurance/assuranceDecennale.html" class="d-block text-decoration-none">
+                        <i class="bi bi-building fs-1 text-secondary hover-icon"></i>
+                        <h5 class="mt-2 fw-bold text-dark">Assurance Décennale</h5>
+                      </a>
                     </div>
                   </div>
-                
+              
                   <!-- Assurance RC Pro -->
                   <div class="col-md-6">
                     <div class="p-3 text-center border rounded shadow-sm">
-                      <a href="assurance/assuranceRcpro.html"><i class="bi bi-briefcase fs-1 text-info"></i>
-                        <h5 class="mt-2">Assurance RC Pro</h5></a>
+                      <a href="assurance/assuranceRcpro.html" class="d-block text-decoration-none">
+                        <i class="bi bi-briefcase fs-1 text-info hover-icon"></i>
+                        <h5 class="mt-2 fw-bold text-dark">Assurance RC Pro</h5>
+                      </a>
                     </div>
                   </div>
                 </div>
-                
-
-                </div> <!-- Fin de la row gy-4 -->
-              </div> <!-- Fin de la col-lg-6 -->
+              </div>
+              
 
             </div> <!-- Fin de la row align-items-center -->
           </div> <!-- Fin du container -->
@@ -287,8 +309,7 @@
 
     </section><!-- /Featured Services Section -->
 
-    <!-- About Section -->
-   <!-- About Section -->
+  <!-- About Section --> 
 <section id="about" class="about section py-5 bg-light">
   <div class="container">
 
@@ -325,16 +346,20 @@
 
       <!-- Images -->
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="d-flex flex-column gap-4 align-items-center align-items-lg-start">
-          <img src="assets/img/sign.webp" class="img-fluid rounded shadow-sm" alt="Signature d'un contrat">
-          <img src="assets/img/seniorheureux.webp" class="img-fluid rounded shadow-sm" alt="Seniors heureux sous assurance">
-          <img src="assets/img/habit.webp" class="img-fluid rounded shadow-sm" alt="Habitation protégée par assurance">
+        <div class="row g-4">
+          <div class="col-12">
+            <img src="assets/img/sign.jpg" class="img-fluid rounded shadow-sm w-100" alt="Signature d'un contrat" style="aspect-ratio: 16/9; object-fit: cover;">
+          </div>
+          <div class="col-12">
+            <img src="assets/img/habit.jpeg" class="img-fluid rounded shadow-sm w-100" alt="Habitation protégée par assurance" style="aspect-ratio: 16/9; object-fit: cover;">
+          </div>
         </div>
       </div>
 
     </div>
   </div>
 </section>
+
 <!-- /About Section -->
 
     </section><!-- /About Section -->
@@ -388,6 +413,9 @@
                 .client-logos .logos-slide:nth-child(2) {
                   animation-delay: 0s;
                 }
+
+      
+
               </style>
             </head>
             <body>
@@ -520,7 +548,7 @@
     <!-- Service Item - Assurance VTC/Taxi -->
     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
       <div class="service-item item-blue position-relative">
-        <i class="bi bi-taxi icon"></i>
+        <i class="bi bi-taxi-front icon"></i> <!-- Correction de l'icône -->
         <div>
           <h3>Assurance VTC/Taxi</h3>
           <p>Couverture adaptée pour votre activité professionnelle et la sécurité de vos passagers.</p>
@@ -532,52 +560,68 @@
   </div>
 </div>
 
+
 <!-- Features Section -->
-<section id="features" class="features section">
+<section id="features" class="features section pt-5 pb-5">
   <div class="container">
-    <div class="row justify-content-between">
-      <div class="col-lg-5 d-flex align-items-center">
-        <ul class="nav nav-tabs" data-aos="fade-up" data-aos-delay="100">
-          <li class="nav-item">
-            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
-              <i class="bi bi-shield-plus"></i>
-              <h4 class="d-none d-lg-block">Protection Financière</h4>
-              <p>Garantit un soutien en cas d’incapacité ou de décès.</p>
+    <div class="row justify-content-between align-items-center">
+      <!-- Texte des fonctionnalités -->
+      <div class="col-lg-5 d-flex flex-column">
+        <ul class="nav nav-tabs flex-column" data-aos="fade-up" data-aos-delay="100">
+          <!-- Élément 1 -->
+          <li class="nav-item mb-4">
+            <a class="nav-link active show d-flex align-items-start" data-bs-toggle="tab" data-bs-target="#features-tab-1">
+              <i class="bi bi-shield-plus me-3 fs-4 text-primary"></i>
+              <div>
+                <h4 class="mb-2">Protection Financière</h4>
+                <p class="m-0">Garantit un soutien en cas d’incapacité ou de décès.</p>
+              </div>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
-              <i class="bi bi-person-heart"></i>
-              <h4 class="d-none d-lg-block">Accompagnement Imprévu</h4>
-              <p>Sécurité pour affronter les imprévus de la vie.</p>
+          <!-- Élément 2 -->
+          <li class="nav-item mb-4">
+            <a class="nav-link d-flex align-items-start" data-bs-toggle="tab" data-bs-target="#features-tab-2">
+              <i class="bi bi-person-heart me-3 fs-4 text-success"></i>
+              <div>
+                <h4 class="mb-2">Accompagnement Imprévu</h4>
+                <p class="m-0">Sécurité pour affronter les imprévus de la vie.</p>
+              </div>
             </a>
           </li>
+          <!-- Élément 3 -->
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
-              <i class="bi bi-house-heart"></i>
-              <h4 class="d-none d-lg-block">Tranquillité</h4>
-              <p>Maintien du niveau de vie de vos proches.</p>
+            <a class="nav-link d-flex align-items-start" data-bs-toggle="tab" data-bs-target="#features-tab-3">
+              <i class="bi bi-house-heart me-3 fs-4 text-warning"></i>
+              <div>
+                <h4 class="mb-2">Tranquillité</h4>
+                <p class="m-0">Maintien du niveau de vie de vos proches.</p>
+              </div>
             </a>
           </li>
         </ul>
       </div>
-
+      
+      <!-- Image associée -->
       <div class="col-lg-6">
         <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+          <!-- Image 1 -->
           <div class="tab-pane fade active show" id="features-tab-1">
-            <img src="assets/img/tabs-1.webp" alt="Protection Financière" class="img-fluid">
+            <img src="assets/img/tabs-1.jpeg" alt="Protection Financière" class="img-fluid rounded">
           </div>
+          <!-- Image 2 -->
           <div class="tab-pane fade" id="features-tab-2">
-            <img src="assets/img/solutionmhs.webp" alt="Accompagnement Imprévu" class="img-fluid">
+            <img src="assets/img/tabs-2.jpeg" alt="Accompagnement Imprévu" class="img-fluid rounded">
           </div>
+          <!-- Image 3 -->
           <div class="tab-pane fade" id="features-tab-3">
-            <img src="assets/img/Capture d'écran 2025-01-10 133332.webp" alt="Tranquillité" class="img-fluid">
+            <img src="assets/img/tabs-3.jpeg" alt="Tranquillité" class="img-fluid rounded">
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 
     <!-- More Features Section -->
 <section id="more-features" class="more-features section">
@@ -628,19 +672,19 @@
           <!-- Assurance VTC/Taxi -->
           <div class="col-lg-6">
             <div class="card h-100 shadow-sm border-0">
-              <img src="assets/img/chauffeursouriant.webp" class="card-img img-fluid rounded" alt="Image d'un chauffeur souriant, représentant l'assurance VTC/Taxi.">
+              <img src="assets/img/chauffeur.png" class="card-img img-fluid rounded" alt="Image d'un chauffeur souriant, représentant l'assurance VTC/Taxi.">
             </div>
           </div>
           <!-- Assurance Décennale -->
           <div class="col-lg-6">
             <div class="card h-100 shadow-sm border-0">
-              <img src="assets/img/chantierdecenale.webp" class="card-img img-fluid rounded" alt="Image d'un chantier, illustrant l'assurance décennale.">
+              <img src="assets/img/bureauMhs.png" class="card-img img-fluid rounded" alt="Image d'un chantier, illustrant l'assurance décennale.">
             </div>
           </div>
           <!-- Assurance RC Pro -->
           <div class="col-lg-12">
             <div class="card h-100 shadow-sm border-0">
-              <img src="assets/img/rcpro2.webp" class="card-img img-fluid rounded" alt="Image représentant l'assurance responsabilité civile professionnelle.">
+              <img src="assets/img/assuranceAuto.png" class="card-img img-fluid rounded" alt="Image représentant l'assurance responsabilité civile professionnelle.">
             </div>
           </div>
         </div>
@@ -656,7 +700,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Avis des clients</h2>
-        <p>Collecte d'avis clients après expérience utilisateur</p>
+        <p>ils ont dit ...</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -1023,7 +1067,7 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-          <img src="assets/img/logo1.webp" alt="logo" style="border-radius: 10px;">
+          <img src="assets/img/logo1.jpeg" alt="logo" style="border-radius: 10px;">
             <span class="sitename">MHSCOURTAGE</span>
           </a>
           <div class="footer-contact pt-3">
@@ -1081,7 +1125,7 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>©<span>2024</span>  <strong class="px-1 sitename">MHSCOURTAGE </strong><span>Tous droits reservés</span> <em>codeMgs</em></p>
+      <p>©<span>2024</span>  <strong class="px-1 sitename">MHSCOURTAGE </strong><span>Tous droits reservés</span> </p>
       <div class="credits">
 
       </div>
@@ -1171,9 +1215,7 @@
             errorContainer.textContent = result.message;
             errorContainer.style.display = 'block';
         }
-    } catch (error) {
-        console.error('Erreur lors de la soumission du formulaire', error);
-    }
+    
 });
 </script>
 
